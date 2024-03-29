@@ -1,0 +1,80 @@
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.buttons {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 5px; 
+    cursor: pointer;
+}
+
+button#plus,
+button#minus,
+button.red,
+button.blue,
+button.black,
+button.green {
+    margin-right: 10px; 
+    margin-top: 10px;
+}
+
+button.left,
+button.center,
+button.right {
+    margin-left: 10px; 
+    margin-top: 10px;
+}
+
+button#plus {
+    background-color: blue;
+    color: white;
+}
+
+button#minus {
+    background-color: red;
+    color: white;
+}
+
+button.red {
+    background-color: red;
+    color: white;
+}
+
+button.blue {
+    background-color: blue;
+    color: white;
+}
+
+button.black {
+    background-color: black;
+    color: white;
+}
+
+button.green {
+    background-color: green;
+    color: white;
+}
+
+button#plus:hover,
+button#minus:hover {
+    opacity: 0.8;
+}

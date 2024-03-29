@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <div id="profile-details"></div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const email = params.get('email');
+        const username = params.get('username');
+        const website = params.get('website');
+
+        const profileDetails = document.getElementById('profile-details');
+        profileDetails.innerHTML = `
+            <p>Name: ${name}</p>
+            <p>Email: ${email}</p>
+            <p>Username: ${username}</p>
+            <p>Website: ${website}</p>
+            <!-- You can add more details like password and bio here -->
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <div id="image-container">
+                <img id="image"
+                    src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg"
+                    alt="Image" />
+                <div class="buttons">
+                    <button id="plus" onclick="zoomIn()">+</button>
+                    <button id="minus" onclick="zoomOut()">-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p id="text" class="text">
+            This is a simple text!
+        </p>
+        <button class="red" onclick="changeColor('red')">
+            Red
+        </button>
+        <button class="blue" onclick="changeColor('blue')">
+            Blue
+        </button>
+        <button class="black" onclick="changeColor('black')">
+            Black
+        </button>
+        <button class="green" onclick="changeColor('green')">
+            Green
+        </button>
+        <span><br></span>
+        <button class="left" onclick="changeAlignment('left')">
+            Left Align
+        </button>
+        <button class="center" onclick="changeAlignment('center')">
+            Center Align
+        </button>
+        <button class="right" onclick="changeAlignment('right')">
+            Right Align
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

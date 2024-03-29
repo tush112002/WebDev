@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+}
+
+#profile-details {
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-profile-input {
+    border: 1px solid #ced4da;
+    padding: 5px;
+    border-radius: 5px;
+}
